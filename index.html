@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Initerary Generator</a>
+      </div>
+    </nav>
+    <div class="row">
+      <form class="input-form col s12"
+            method="GET"
+            action="report.php"
+            target="_blank">
+        <div class="card">
+
+          <div class="card-content">
+            <div class="row">
+              <div class="input-field col s6">
+                <textarea name="header1" class="materialize-textarea">Start Tour</textarea>
+                <label for="header1">Header 1</label>
+              </div>
+              <div class="input-field col s6">
+                <textarea name="header2" class="materialize-textarea">Paket Promo Bali</textarea>
+                <label for="header2">Header 2</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s3">
+                <textarea name="day1" class="materialize-textarea">Day 1 Plan</textarea>
+                <label for="day1">Day 1</label>
+              </div>
+              <div class="input-field col s3">
+                <textarea name="day2" class="materialize-textarea">Day 2 Plan</textarea>
+                <label for="day2">Day 2</label>
+              </div>
+              <div class="input-field col s3">
+                <textarea name="day3" class="materialize-textarea">Day 3 Plan</textarea>
+                <label for="day3">Day 3</label>
+              </div>
+              <div class="input-field col s3">
+                <textarea name="day4" class="materialize-textarea">Day 4 Plan</textarea>
+                <label for="day4">Day 4</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-action">
+            <a id="btn-generate" href="#">Generate</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
